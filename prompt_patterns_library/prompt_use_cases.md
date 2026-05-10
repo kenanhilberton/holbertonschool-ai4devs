@@ -55,3 +55,9 @@ This document outlines the primary use cases for AI-assisted software developmen
   - **Purpose**: To create realistic datasets for database seeding or UI testing.
   - **Input**: Data schema or JSON structure requirements.
   - **Output**: Array of mock data objects.
+
+## 5. Learning & Research
+- **Technology Comparison**
+  - **Purpose**: To compare two frameworks, libraries, or languages for a specific use case.
+  - **Input**: Two technologies (e.g., [TECH_A] vs [TECH_B]) and project constraints.
+  - **Output**: A pros/cons list and a recommendation based on requirements.
