@@ -61,3 +61,8 @@ This document outlines the primary use cases for AI-assisted software developmen
   - **Purpose**: To compare two frameworks, libraries, or languages for a specific use case.
   - **Input**: Two technologies (e.g., [TECH_A] vs [TECH_B]) and project constraints.
   - **Output**: A pros/cons list and a recommendation based on requirements.
+
+- **New Concept Explanation**
+  - **Purpose**: To explain a technical concept or design pattern using analogies.
+  - **Input**: A technical term (e.g., "Dependency Injection") and the user's current knowledge level.
+  - **Output**: Simplified explanation with a small code example.
