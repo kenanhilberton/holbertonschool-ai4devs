@@ -1,68 +1,59 @@
-# Prompt Use Cases Library
+# Prompt Use Cases
 
-This document outlines the primary use cases for AI-assisted software development, categorized by their role in the development lifecycle. Each use case is designed to be a reusable pattern for improving productivity and code quality.
-
-## 1. Code Quality & Maintenance
-- **Code Refactoring**
-  - **Purpose**: To improve readability, reduce complexity, and optimize performance without changing external behavior.
-  - **Input**: Source code in [LANGUAGE].
-  - **Output**: Refactored code block with a summary of changes.
-  
+## Code Quality
+- **Refactoring**
+  - **Goal**: Improve readability and performance
+  - **Input**: Source function in [LANGUAGE]
+  - **Output**: Optimized code + explanation
 - **Style Enforcement**
-  - **Purpose**: To ensure code adheres to specific naming conventions (e.g., PEP8, Airbnb Style Guide) and project-specific formatting.
-  - **Input**: Unformatted or inconsistent code block.
-  - **Output**: Reformatted code consistent with the specified style guide.
+  - **Goal**: Enforce consistent naming and formatting
+  - **Input**: Code block
+  - **Output**: Rewritten code with consistent style
+- **Code Review**
+  - **Goal**: Identify logical flaws or anti-patterns
+  - **Input**: Pull Request or code snippet
+  - **Output**: List of potential issues and suggestions
 
-- **Legacy Code Explanation**
-  - **Purpose**: To understand old or undocumented codebases by breaking down logic into plain English.
-  - **Input**: Complex legacy function or module.
-  - **Output**: Step-by-step logical breakdown and high-level summary.
-
-## 2. Debugging & Error Handling
+## Debugging
 - **Root Cause Analysis**
-  - **Purpose**: To identify why an error is occurring based on stack traces or unexpected behavior.
-  - **Input**: Error logs, stack traces, and the relevant code snippet.
-  - **Output**: Identification of the bug and a detailed explanation of the fix.
+  - **Goal**: Identify why an error occurs from logs
+  - **Input**: Error stack trace and relevant code
+  - **Output**: Explanation of the bug and a fix
+- **Security Audit**
+  - **Goal**: Detect common vulnerabilities (SQLi, XSS)
+  - **Input**: Code handling user inputs or DB queries
+  - **Output**: Security report and patched code
+- **Performance Profiling**
+  - **Goal**: Identify bottlenecks in execution time
+  - **Input**: Complex algorithm or nested loops
+  - **Output**: Time complexity analysis and optimized version
 
-- **Security Vulnerability Scanning**
-  - **Purpose**: To detect common security flaws like SQL Injection, XSS, or improper memory handling.
-  - **Input**: Sensitive code segments (e.g., API endpoints, database queries).
-  - **Output**: Report of potential vulnerabilities and secure code alternatives.
+## Documentation
+- **Docstring Generation**
+  - **Goal**: Generate standardized API documentation
+  - **Input**: Function signature and body
+  - **Output**: Docstrings in [FORMAT] (e.g., Javadoc, Google Style)
+- **README Authoring**
+  - **Goal**: Create a project overview for GitHub
+  - **Input**: Project structure and feature list
+  - **Output**: Structured README.md file
 
-## 3. Documentation & Knowledge Sharing
-- **API Documentation Generation**
-  - **Purpose**: To automatically create Swagger/OpenAPI or Javadoc/Doxygen style comments.
-  - **Input**: Function signatures and implementation.
-  - **Output**: Standardized documentation blocks (docstrings).
-
-- **README Generation**
-  - **Purpose**: To create structured project overviews for GitHub repositories.
-  - **Input**: Project structure, main features, and installation steps.
-  - **Output**: A professionally formatted `README.md` file.
-
-## 4. Testing & Validation
+## Testing
 - **Unit Test Generation**
-  - **Purpose**: To increase code coverage by generating test cases for various input scenarios.
-  - **Input**: A standalone function or class.
-  - **Output**: Test suite using [TESTING_FRAMEWORK] (e.g., PyTest, Jest).
+  - **Goal**: Generate test cases for a specific function
+  - **Input**: Source code in [LANGUAGE]
+  - **Output**: Test suite using [FRAMEWORK]
+- **Edge Case Discovery**
+  - **Goal**: Find boundary conditions that break logic
+  - **Input**: Function requirements or logic
+  - **Output**: List of edge cases and test inputs
+- **Mock Data Creation**
+  - **Goal**: Generate fake data for testing
+  - **Input**: JSON schema or data requirements
+  - **Output**: Array of mock data objects
 
-- **Edge Case Identification**
-  - **Purpose**: To find boundary conditions that might break the application.
-  - **Input**: Function requirements or logic.
-  - **Output**: List of potential edge cases and suggested test inputs.
-
-- **Mock Data Generation**
-  - **Purpose**: To create realistic datasets for database seeding or UI testing.
-  - **Input**: Data schema or JSON structure requirements.
-  - **Output**: Array of mock data objects.
-
-## 5. Learning & Research
+## Learning & Research
 - **Technology Comparison**
-  - **Purpose**: To compare two frameworks, libraries, or languages for a specific use case.
-  - **Input**: Two technologies (e.g., [TECH_A] vs [TECH_B]) and project constraints.
-  - **Output**: A pros/cons list and a recommendation based on requirements.
-
-- **New Concept Explanation**
-  - **Purpose**: To explain a technical concept or design pattern using analogies.
-  - **Input**: A technical term (e.g., "Dependency Injection") and the user's current knowledge level.
-  - **Output**: Simplified explanation with a small code example.
+  - **Goal**: Compare two tools for a specific project
+  - **Input**: [TECH_A] and [TECH_B] requirements
+  - **Output**: Pros/Cons comparison and recommendation
