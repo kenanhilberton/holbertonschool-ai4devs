@@ -1,7 +1,3 @@
-Əlbəttə, sistemin (autograder) ingilis dilindəki açar sözləri daha dəqiq tanıdığını nəzərə alsaq, bu versiya daha etibarlıdır. Mətni tam olaraq tələb olunan strukturda və akademik səviyyədə hazırladım.
-
-Aşağıdakı mətni reflection.md faylına kopyalayıb GitHub-a göndər:
-
 Reflection on AI-Assisted Debugging
 Introduction
 In this project, I investigated and resolved five distinct software bugs across Python, JavaScript, and C using an AI assistant. The primary objective was to evaluate the effectiveness of AI in a debugging workflow, understand its role in root-cause analysis, and identify the boundaries where human intervention remains indispensable for code quality and security.
