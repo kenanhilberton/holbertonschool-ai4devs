@@ -1,18 +1,18 @@
 # Microservices Architecture Description
 
-The EcoRide Connect application is built using a decentralized microservices architecture. Each service manages its own data and scale independently.
+The EcoRide Connect application is decomposed into 8 specialized microservices to ensure modularity and independent scalability.
 
 ### Core Services:
 
-1. **API Gateway**: Acts as the entry point for all mobile and web traffic, handling authentication routing and request rate limiting.
-2. **Identity & Auth Service**: Solely responsible for security, JWT issuing, and login credentials. It does not handle user profile details.
-3. **User Profile Service**: Manages personal data, user preferences, and rating history. It is distinct from the authentication service.
-4. **Vehicle Verification Service**: Handles the complex logic of checking driver licenses, vehicle documents, and insurance status.
-5. **Ride Matching Service**: Executes the real-time algorithm to connect drivers and passengers based on GPS coordinates.
-6. **Payment Service**: A PCI-compliant service that handles the split-payment logic and digital wallet balances.
-7. **Sustainability Service**: Dedicated to calculating CO2 savings and managing environmental impact badges for gamification.
-8. **Messaging Service**: An event-driven component that sends real-time push notifications and transactional emails via message brokers.
+1. **API Gateway**: The central entry point that handles request routing, SSL termination, and client authentication layers.
+2. **Authentication Service**: Strictly manages security credentials, password hashing, and OAuth2/JWT token lifecycle. 
+3. **Passenger Profile Service**: Manages passenger-specific data such as trip preferences, emergency contacts, and loyalty points.
+4. **Driver & Vehicle Service**: A high-compliance service dedicated to vetting driver licenses, vehicle registration documents, and insurance validity.
+5. **Ride Matching Service**: Executes the geospatial algorithms required to match active drivers with pending ride requests in real-time.
+6. **Payment & Wallet Service**: Handles secure financial transactions, split-fare logic between users, and virtual wallet balance management.
+7. **Sustainability Tracker**: An independent engine that calculates CO2 savings and environmental impact metrics for marketing and gamification.
+8. **Notification Engine**: A robust messaging service that triggers push notifications, SMS, and emails via an asynchronous message broker.
 
 ### Service Interactions:
-- **Synchronous**: Critical data exchange happens via **gRPC** for high-speed internal communication.
-- **Asynchronous**: Non-blocking tasks like notifications or analytics processing use **RabbitMQ** to maintain system decoupling.
+- **Internal Communication**: Microservices exchange data using **gRPC** for low-latency, strongly-typed contracts.
+- **Event-Driven Workflows**: Asynchronous events (like a completed ride) are published to **RabbitMQ**, allowing services like Sustainability and Notifications to react without blocking the main flow.
