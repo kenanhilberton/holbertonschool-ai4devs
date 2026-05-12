@@ -1,0 +1,16 @@
+graph TD
+  User((User)) --> Gateway[API Gateway]
+  
+  Gateway --> AuthService[Auth Service]
+  Gateway --> RideService[Ride Matching Service]
+  Gateway --> PaymentService[Payment Service]
+  Gateway --> EcoService[Eco-Impact Service]
+  Gateway --> NotifService[Notification Service]
+  Gateway --> UserService[User Management Service]
+  Gateway --> ReportService[Reporting & Analytics Service]
+
+  AuthService --> AuthDB[(Auth DB)]
+  RideService --> RideDB[(Ride DB)]
+  PaymentService --> PayDB[(Payment DB)]
+  UserService --> UserDB[(User DB)]
+  EcoService --> EcoDB[(Eco DB)]
