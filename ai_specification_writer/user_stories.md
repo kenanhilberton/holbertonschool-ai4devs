@@ -1,101 +1,81 @@
 # User Stories for TaskFlow AI
 
 ### User Story 1
-**Role**: Passenger  
-**Goal**: I want to search for nearby drivers  
-**Benefit**: so that I can find a quick ride.  
+As a Passenger, I want to search for nearby drivers so that I can find a quick ride.
 **Acceptance Criteria**:
-- User enters pickup and destination.
-- System displays available drivers within 5 km.
-- Ride can be booked in under 2 minutes.  
+- User enters pickup and destination addresses.
+- System displays available drivers within a 5 km radius.
+- User can confirm a booking within 3 clicks.
 **Priority**: MVP
 
 ### User Story 2
-**Role**: Developer  
-**Goal**: I want to see tasks prioritized by AI  
-**Benefit**: so that I know exactly what to work on first.  
+As a Developer, I want to see tasks prioritized by AI so that I know exactly what to work on first.
 **Acceptance Criteria**:
-- Tasks are sorted based on urgency and impact tags.
-- AI provides a 1-sentence reason for the specific priority.
-- User can toggle between AI-sort and manual sort.  
+- Tasks are sorted automatically by urgency and impact.
+- AI provides a brief reason for each assigned priority level.
+- User can switch between AI sorting and manual sorting.
 **Priority**: MVP
 
 ### User Story 3
-**Role**: Team Member  
-**Goal**: I want to receive notifications for new task assignments  
-**Benefit**: so that I don't miss urgent work.  
+As a Team Member, I want to receive notifications for new tasks so that I don't miss urgent work.
 **Acceptance Criteria**:
-- Notifications appear in real-time within the app.
-- User can configure email alerts for high-priority tasks.
-- Clicking the notification takes the user directly to the task.  
+- Notifications are sent in real-time within the application.
+- Users can enable or disable email alerts for tasks.
+- Clicking a notification opens the specific task details.
 **Priority**: High
 
 ### User Story 4
-**Role**: Manager  
-**Goal**: I want the AI to suggest task assignments based on skills  
-**Benefit**: so that work is distributed efficiently.  
+As a Manager, I want the AI to suggest task assignments based on skills so that work is distributed efficiently.
 **Acceptance Criteria**:
-- System analyzes "Skills" field in user profiles.
-- AI provides top 3 suggested assignees for any new task.
-- Manager can accept or override the suggestion.  
+- System analyzes user profiles for relevant technical skills.
+- AI suggests at least three suitable candidates for each task.
+- Manager has the option to approve or reject suggestions.
 **Priority**: High
 
 ### User Story 5
-**Role**: Developer  
-**Goal**: I want to update task status  
-**Benefit**: so that the team can see my progress.  
+As a Developer, I want to update my task status to "Done" so that the team can see my progress.
 **Acceptance Criteria**:
-- Status update happens with a single click or drag-and-drop.
-- Update is reflected on the project manager's dashboard instantly.
-- History log records the time of the status change.  
+- Status changes are reflected on the team dashboard instantly.
+- System records the timestamp of every status update.
+- Completed tasks move to the "Finished" column automatically.
 **Priority**: MVP
 
 ### User Story 6
-**Role**: Stakeholder  
-**Goal**: I want to view automated weekly progress reports  
-**Benefit**: so that I can monitor project health without meetings.  
+As a Stakeholder, I want to view automated weekly reports so that I can monitor project health.
 **Acceptance Criteria**:
-- Report is generated every Friday at 5:00 PM.
-- Includes charts showing completed vs. pending tasks.
-- Report can be exported as a PDF.  
+- Reports are generated automatically every Friday at 5 PM.
+- Includes visual charts for completed vs pending tasks.
+- Reports can be downloaded in PDF format for sharing.
 **Priority**: Medium
 
 ### User Story 7
-**Role**: Team Lead  
-**Goal**: I want to see a workload heatmap  
-**Benefit**: so that I can prevent team burnout.  
+As a Team Lead, I want to see a workload heatmap so that I can prevent team burnout.
 **Acceptance Criteria**:
-- Heatmap shows the number of active tasks per person.
-- Overloaded members (more than 5 tasks) are highlighted in red.
-- System suggests moving tasks from red-zone members.  
+- Heatmap displays the number of active tasks per member.
+- Overloaded members are highlighted with a red indicator.
+- System provides a summary of total team capacity.
 **Priority**: High
 
 ### User Story 8
-**Role**: User  
-**Goal**: I want to reset my password via email  
-**Benefit**: so that I can regain access if I forget it.  
+As a User, I want to reset my password via email so that I can regain access to my account.
 **Acceptance Criteria**:
-- Reset link is sent to the registered email address.
-- Link expires after 30 minutes for security.
-- System requires a minimum of 8 characters for the new password.  
+- Password reset link is sent to the verified email.
+- Link remains valid for a maximum of 60 minutes.
+- New password must meet minimum security requirements.
 **Priority**: MVP
 
 ### User Story 9
-**Role**: Project Manager  
-**Goal**: I want to archive completed projects  
-**Benefit**: so that the workspace remains clean.  
+As a Project Manager, I want to archive old projects so that the workspace remains organized.
 **Acceptance Criteria**:
-- Archived projects are hidden from the main dashboard.
-- Archived data is still searchable and retrievable.
-- Confirmation modal appears before archiving.  
+- Archived projects are removed from the active list view.
+- Users can still search and view archived project data.
+- System asks for confirmation before archiving any project.
 **Priority**: Low
 
 ### User Story 10
-**Role**: Admin  
-**Goal**: I want to manage user roles and permissions  
-**Benefit**: so that data security is maintained.  
+As an Admin, I want to manage user permissions so that data security is maintained.
 **Acceptance Criteria**:
-- Admin can assign "Viewer", "Editor", or "Admin" roles.
-- Viewers cannot delete or edit tasks.
-- Role changes take effect immediately.  
+- Admin can assign specific roles like Viewer or Editor.
+- Permission changes take effect without needing a restart.
+- System logs all changes made to user access levels.
 **Priority**: High
