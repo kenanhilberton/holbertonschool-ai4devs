@@ -1,0 +1,14 @@
+graph TD
+  User((User Interface)) --> Frontend[Frontend Web/Mobile]
+  Frontend --> Backend[Central Monolith Backend]
+  
+  subgraph Backend_Monolith [Internal Modules]
+    Backend --> Auth[Authentication Module]
+    Backend --> Match[Route Matching Module]
+    Backend --> Pay[Payment Module]
+    Backend --> Eco[Eco-Impact Tracker]
+    Backend --> Notif[Notification Module]
+    Backend --> UserMgmt[User Management]
+  end
+  
+  Backend --> DB[(Central Database)]
