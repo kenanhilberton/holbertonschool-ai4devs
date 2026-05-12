@@ -63,19 +63,3 @@ As a User, I want to reset my password via email so that I can regain access to 
 - Link remains valid for a maximum of 60 minutes.
 - New password must meet minimum security requirements.
 **Priority**: MVP
-
-### User Story 9
-As a Project Manager, I want to archive old projects so that the workspace remains organized.
-**Acceptance Criteria**:
-- Archived projects are removed from the active list view.
-- Users can still search and view archived project data.
-- System asks for confirmation before archiving any project.
-**Priority**: Low
-
-### User Story 10
-As an Admin, I want to manage user permissions so that data security is maintained.
-**Acceptance Criteria**:
-- Admin can assign specific roles like Viewer or Editor.
-- Permission changes take effect without needing a restart.
-- System logs all changes made to user access levels.
-**Priority**: High
