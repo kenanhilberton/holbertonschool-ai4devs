@@ -6,13 +6,13 @@ EcoRide Connect is a smart carpooling platform designed to optimize urban commut
 ## Core Features
 - **Smart Route Matching**: AI algorithms to find the most efficient pickup and drop-off points.
 - **Eco-Impact Dashboard**: Real-time tracking of CO2 emissions saved by each carpool session.
-- **Dynamic Pricing Engine**: Automated cost-sharing calculations based on distance, fuel prices, and tolls.
+- **Dynamic Pricing Engine**: Automated cost-sharing calculations based on distance and fuel prices.
 - **In-App Secure Payments**: Integrated digital wallet and automated split-payment system.
 
 ## User Types
-- **Drivers**: Individuals looking to share fuel costs and reduce the boredom of solo commuting.
-- **Passengers**: Commuters looking for an affordable, eco-friendly alternative to public transport.
-- **Corporate Admins**: Company representatives managing employee carpooling programs for sustainability.
+- **Drivers**: Individuals who offer rides in their personal vehicles to share travel costs.
+- **Passengers**: Users looking for affordable and eco-friendly transportation options for their daily commute.
+- **Administrators**: Platform managers who oversee user verification, support tickets, and system health.
 
 ## Constraints
 - **Scalability**: The system must handle high traffic during peak hours (up to 200K concurrent users).
